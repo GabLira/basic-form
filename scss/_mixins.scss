@@ -1,0 +1,9 @@
+@mixin dp-flx ($flx: flex, $cntr: center) {
+  display: $flx;
+  align-items: $cntr;
+  justify-content: $cntr;
+}
+@mixin no-lines ($nne: none) {
+  border: none;
+  outline: none;
+}

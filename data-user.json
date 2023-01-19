@@ -1,0 +1,11 @@
+[
+  {
+    "email": "E-mail",
+    "password": "Password",
+    "buttons": {
+      "logIn": "Log-In",
+      "singUp": "Sing Up"
+    },
+    "help": "Help"
+  }
+]

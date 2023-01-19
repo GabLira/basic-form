@@ -1,0 +1,17 @@
+@import "mixins";
+@import "components/container";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url("../media/img/night-summer.jpg");
+  background-position: center;
+  background-size: cover;
+}

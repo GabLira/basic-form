@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 650px;
+}
+.container__form {
+  display: grid;
+  margin-top: 2em;
+  gap: 1em;
+  grid-template-rows: repeat(5, 1fr);
+  width: 270px;
+  text-align: center;
+  position: relative;
+  top: 110px;
+}
+.container__form--group {
+  position: relative;
+}
+.container__form--group input {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background: none;
+  font-size: 1rem;
+  padding: 0.3em 0.2em;
+  border: none;
+  outline: none;
+  border-bottom: 1px #b0a7a7 solid;
+}
+.container__form--group input:focus {
+  border-bottom: 1px #0f7eee solid;
+}
+.container__form--group input::placeholder {
+  color: #b0a7a7;
+}
+.container__form--group label {
+  display: none;
+  color: #454545;
+  font-size: 0.95rem;
+  font-weight: 300;
+  position: absolute;
+  transform: translateY(10px);
+  transition: transform 0.5s, color 0.3s;
+}
+.container__form button {
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  text-transform: uppercase;
+  width: 100%;
+  height: 3.8em;
+  color: #cee3f8;
+  font-weight: 700;
+  margin-top: 12px;
+  padding: 8px;
+  font-size: 0.8rem;
+  box-shadow: -3px 7px 12px #4054;
+}
+.container__form button:active {
+  transition: 0.2ms ease;
+}
+.container__form--help {
+  text-underline: none;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  color: #a0bcd7;
+  margin-top: 1.3em;
+}
+.container__form--log {
+  background: #4595e6;
+}
+.container__form--log:active {
+  background: #1e82e8;
+}
+.container__form--sign {
+  background: #3db4cc;
+}
+.container__form--sign:active {
+  background: #0fa7c6;
+  transition: 0.2s ease;
+}
+
+input:focus + label {
+  transform: translateY(-12px) scale(0.6);
+  transform-origin: left top;
+  color: blue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("../media/img/night-summer.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=main.css.map */
