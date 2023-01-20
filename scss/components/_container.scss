@@ -5,58 +5,42 @@
 
   &__form {
     display: grid;
-    margin-top: 2em;
-    gap: 1em;
-    grid-template-rows: repeat(5, 1fr);
-    width: 270px;
     text-align: center;
     position: relative;
+    width: 270px;
+    grid-template-rows: repeat(5, 1fr);
+    margin-top: 2em;
+    gap: 1em;
     top: 110px;
 
     &--group {
       position: relative;
 
       input {
-        width: 100%;
-        font-family: 'Poppins', sans-serif;
-        background: none;
-        font-size: 1rem;
-        padding: 0.3em 0.2em;
-        @include no-lines();
-        border-bottom: 1px #b0a7a7 solid;
+        @include input();
 
         &:focus {
-          border-bottom: 1px #0f7eee solid;
+          border-bottom: 1px $primary-color-dark solid;
         }
 
         &::placeholder {
-          color: #b0a7a7;
+          color: $primary-color-light;
         }
       }
 
       label {
         display: none;
-        color: #454545;
+        position: absolute;
         font-size: .95rem;
         font-weight: 300;
-        position: absolute;
         transform: translateY(10px);
         transition: transform .5s, color .3s;
+        color: $tertiary-color-dark;
       }
     }
 
     button {
-      @include no-lines();
-      border-radius: 6px;
-      text-transform: uppercase;
-      width: 100%;
-      height: 3.8em;
-      color: #cee3f8;
-      font-weight: 700;
-      margin-top: 12px;
-      padding: 8px;
-      font-size: .8rem;
-      box-shadow: -3px 7px 12px #4054;
+      @include button();
 
       &:active {
         transition: .2ms ease;
@@ -68,24 +52,24 @@
       text-decoration: none;
       text-align: center;
       font-weight: 400;
-      color: #a0bcd7;
       margin-top: 1.3em;
+      color: $primary-text-color;
     }
 
     &--log {
-      background: #4595e6;
+      background: $secondary-color-dark;
 
       &:active {
-        background: #1e82e8;
+        background: $primary-accent-color;
       }
 
     }
 
     &--sign {
-      background: #3db4cc;
+      background: $secondary-color;
 
       &:active {
-        background: #0fa7c6;
+        background: $secondary-text-color;
         transition: .2s ease;
       }
     }
@@ -95,5 +79,5 @@
 input:focus + label {
   transform: translateY(-12px) scale(.6);
   transform-origin: left top;
-  color: blue;
+  color: $secondary-accent-color;
 }
