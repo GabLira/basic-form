@@ -10,8 +10,8 @@ export const buildForm = data => {
 <!--                        <label for="password">${user.password}</label>-->
                         <input type="password" id="password" name="password" placeholder="Password">
                     </div>
-                    <button class="container__form--log">${user.buttons.logIn}</button>
-                    <button class="container__form--sign">${user.buttons.singUp}</button> 
+                    <button class="container__form--log" type="submit">${user.buttons.logIn}</button>
+                    <button class="container__form--sign" type="submit">${user.buttons.singUp}</button> 
                     <a href="" class="container__form--help">${user.help}</a>    
                                
 `
